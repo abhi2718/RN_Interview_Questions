@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import Chart from '../components/lineChart';
+import List from '../components/list';
 import Slider from '@react-native-community/slider';
 import {StyleSheet, Text, View} from 'react-native';
 function Stats() {
@@ -7,9 +7,9 @@ function Stats() {
   return (
     <View style={styles.container}>
       <Text>{value}</Text>
-      <Chart />
+      <List />
       <Slider
-        style={{width: 400, height: 100}}
+        style={styles.sliderContainer}
         minimumValue={0}
         step={1}
         maximumValue={10}
@@ -24,6 +24,10 @@ function Stats() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-  },
+    },
+    sliderContainer: {
+        width: 400,
+        height: 100
+    }
 });
 export default Stats;

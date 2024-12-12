@@ -10,8 +10,8 @@ function App(): React.JSX.Element {
  
   return (
     <SafeAreaView style={styles.container}>
-      <Posts />
-      {/* <Stats /> */}
+      {/* <Posts /> */}
+      <Stats />
     </SafeAreaView>
   );
 }
