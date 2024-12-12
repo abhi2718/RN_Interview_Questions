@@ -1,6 +1,6 @@
 
 API Details
-Featch user profile
+Fetch posts
 HTTP Method: GET
 http://localhost:8000/api/posts?limit=10&page=1
 
