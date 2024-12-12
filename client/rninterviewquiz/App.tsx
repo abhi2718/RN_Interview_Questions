@@ -4,12 +4,14 @@ import {
   StyleSheet,
 } from 'react-native';
 import Posts from './components/posts';
+import Stats from './screens/stats';
 
 function App(): React.JSX.Element {
  
   return (
     <SafeAreaView style={styles.container}>
-      <Posts  />
+      <Posts />
+      {/* <Stats /> */}
     </SafeAreaView>
   );
 }
