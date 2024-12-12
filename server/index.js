@@ -11,10 +11,10 @@ app.get("/", (req, res) => {
   });
 });
 
-app.get("/api/users", async (req, res) => {
+app.get("/api/posts", async (req, res) => {
   const query = req.query;
-  const limit = req.query?.limit ? req.query.limit : 10;
-  const page = req.query?.page ? req.query.page : 1;
+  const limit = query?.limit ? query.limit : 10;
+  const page = query?.page ? query.page : 1;
   const url = `https://jsonplaceholder.typicode.com/posts?_limit=${limit}&_page=${page}&_limit=${limit}`;
   const response = await fetch(url);
   const data = await response.json();
